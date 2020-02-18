@@ -1,0 +1,34 @@
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  gap: 10px;
+}
+
+.card {
+  padding: 0 2rem;
+}
+
+.card__img {
+  max-width: 100%;
+}
+
+.card__title {
+  font-size: 1.2rem;
+}
+
+.card__tags {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.card__tag {
+  background-color: #ccc;
+  padding: 0.2rem .5rem;
+
+}
