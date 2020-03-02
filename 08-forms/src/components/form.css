@@ -1,0 +1,23 @@
+.form {
+    margin: 0 1rem;
+    font-family: sans-serif;
+}
+
+.form__field {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.form__label,
+.form__submit {
+    margin-right: 1rem;
+}
+
+.form__label--radio:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.form__submit {
+    padding: .5rem .8rem;
+}
