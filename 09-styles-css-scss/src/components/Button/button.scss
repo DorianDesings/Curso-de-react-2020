@@ -1,0 +1,11 @@
+$color:royalblue;
+
+.button {
+    background-color: $color;
+    color: #fff;
+
+    &:hover {
+        background-color: red;
+        color: $color;
+    }
+}
