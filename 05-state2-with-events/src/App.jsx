@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from './Button'
 
 class App extends Component {
 
@@ -26,7 +27,7 @@ class App extends Component {
         return (
             <>
                 <h1>Number: {this.state.number}</h1>
-                <button onClick={this.handleIncrement}>Increment</button>
+                <Button text='lo que sea' onClick={this.handleIncrement}>Increment</Button>
                 <button onClick={this.handleDecrement}>Decrement</button>
                 <button onClick={this.handleReset}>Reset</button>
             </>
