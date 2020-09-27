@@ -1,13 +1,19 @@
-import React from "react";
+import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import { createGlobalStyle } from "styled-components";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
 
-import Home from "./components/Home";
-import User from "./components/User";
-import UserWithId from "./components/UserWithId";
-import Contact from "./components/Contact";
-import Navigation from "./components/Navigation";
+import Home from './components/Home';
+import User from './components/User';
+import UserWithId from './components/UserWithId';
+import Contact from './components/Contact';
+import Navigation from './components/Navigation';
+import Users from './components/Users';
 
 const GlobalStyle = createGlobalStyle`
     body{
@@ -25,8 +31,9 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route path="/user/:userId" component={UserWithId} />
           <Route path="/user" component={User} />
+          <Route path="/users/:id?" component={Users} />
           <Route path="/contact" component={Contact} />
-          <Route path="/*" >
+          <Route path="/*">
             <Redirect to="/" />
           </Route>
         </Switch>
